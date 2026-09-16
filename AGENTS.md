@@ -31,12 +31,14 @@ Kịch bản → `ak-video`. Giọng đọc Việt → `ak-elevenlabs`. Soi file
   Sinh `index.html` từ `frame.md + edit.yaml + transcript.json`. Sửa ở `edit.yaml`, không sửa tay HTML sinh ra.
 - `videos/<ten-video>/` — 1 project HyperFrames: `BRIEF.md`, `transcript.json`, `edit.yaml`,
   `index.html`, `assets/`, `renders/`. File `AGENTS.md`/`CLAUDE.md` trong đó là của CLI, vẫn tuân theo.
+  Video mới: làm theo từng bước trong `docs/new-video.md`.
 - `scripts/` — `probe-mp4.sh`, `contact-sheet.sh` (nguồn MIT: iart-ai/motion-skills, xem `scripts/LICENSE.motion-skills.txt`).
 - Output: `videos/<ten-video>/renders/{YYMMDD}-{page}-{slug}.mp4` (page: BSDQ|PTTM|ATCYK|Sua).
 
 ## Commands
 
 ```bash
+python scripts/new-video.py <ten-video>   # dựng khung project mới
 python templates/talking-head-reels/build.py --project videos/<ten-video>
 npx hyperframes check                       # cổng duy nhất: lint + validate + layout
 npx hyperframes preview --background        # agent preview, xong nhớ --stop
