@@ -7,7 +7,7 @@ Repo Reels 9:16 Dr. Đắc Quang + HyperFrames. Mọi quy ước ở `AGENTS.md`
 Mirror đầy đủ tại `.claude/skills/` (giống hệt `.agents/skills/`):
 
 - `ak-hyperframes` (+ `references/setup.md`, `brand-video.md`, `pipeline.md`)
-- `ak-video`, `ak-elevenlabs`, `ak-fb-page-publish`, `ak-motion-graphics`
+- `ak-video`, `ak-elevenlabs`
 - 26 skill upstream: `hyperframes` (router), `motion-doctrine`, `hyperframes-core`, `general-video`, `motion-graphics`, `talking-head-recut`, `embedded-captions`, `media-use`, ...
 
 Thứ tự bắt buộc: `hyperframes` → `motion-doctrine` → `ak-hyperframes` → domain skill → `hyperframes-core`.

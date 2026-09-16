@@ -21,8 +21,8 @@ Skills là spec chuẩn, mirror 2 nơi (nội dung giống hệt nhau):
 5. skill `hyperframes-core` khi viết composition (luật data-start, window.__timelines, deterministic)
 ```
 
-Kịch bản → `ak-video`. Giọng đọc Việt → `ak-elevenlabs`. Soi file MP4 → `ak-motion-graphics`
-(`scripts/probe-mp4.sh`, `scripts/contact-sheet.sh`). Đăng fanpage → `ak-fb-page-publish`.
+Kịch bản → `ak-video`. Giọng đọc Việt → `ak-elevenlabs`. Soi file MP4 bằng
+`scripts/probe-mp4.sh` và `scripts/contact-sheet.sh`.
 
 ## Quy ước repo
 
@@ -31,7 +31,7 @@ Kịch bản → `ak-video`. Giọng đọc Việt → `ak-elevenlabs`. Soi file
   Sinh `index.html` từ `frame.md + edit.yaml + transcript.json`. Sửa ở `edit.yaml`, không sửa tay HTML sinh ra.
 - `videos/<ten-video>/` — 1 project HyperFrames: `BRIEF.md`, `transcript.json`, `edit.yaml`,
   `index.html`, `assets/`, `renders/`. File `AGENTS.md`/`CLAUDE.md` trong đó là của CLI, vẫn tuân theo.
-- `scripts/` — `probe-mp4.sh`, `contact-sheet.sh` (bản copy tĩnh từ `ak-motion-graphics`).
+- `scripts/` — `probe-mp4.sh`, `contact-sheet.sh` (nguồn MIT: iart-ai/motion-skills, xem `scripts/LICENSE.motion-skills.txt`).
 - Output: `videos/<ten-video>/renders/{YYMMDD}-{page}-{slug}.mp4` (page: BSDQ|PTTM|ATCYK|Sua).
 
 ## Commands

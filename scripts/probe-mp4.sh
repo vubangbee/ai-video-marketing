@@ -3,7 +3,7 @@
 #
 # Source: iart-ai/motion-skills (MIT) — tools/verify/probe-mp4.sh
 # Upstream ref: master @ 945c4c70f7cf82a4502cfe3877ff8466972d2842
-# Copied verbatim under MIT; see kits/marketing/skills/ak-motion-graphics/SKILL.md
+# Copied verbatim under MIT; see scripts/LICENSE.motion-skills.txt
 # for attribution and https://github.com/iart-ai/motion-skills/blob/master/LICENSE.
 #
 # Renders lie; the file doesn't. This reads resolution / codec / fps / duration straight from the

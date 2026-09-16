@@ -10,9 +10,9 @@ unit: the frame — 1080×1920 primary; 1080×1350 và 1080×1080 cho feed
 principle: màu và font là bất biến · bố cục tự do · chữ trên video lấy từ lời bác sĩ, không bịa
 
 colors:
-  primary: "#1E73BE"        # Trust Blue — nền card, thanh lower-third, viền CTA
-  primary-deep: "#155A96"
-  accent: "#F59E0B"         # Golden Amber — MỘT điểm nhấn mỗi cảnh: từ khóa, giá, con số
+  primary: "#004fa4"        # Trust Blue — nền card, thanh lower-third, viền CTA
+  primary-deep: "#004fa4"
+  accent: "#f4c70f"         # Golden Amber — MỘT điểm nhấn mỗi cảnh: từ khóa, giá, con số
   ink: "#111827"            # chữ trên nền sáng, pill tối
   muted: "#64748B"          # chữ phụ trên nền sáng
   paper: "#FFFFFF"
@@ -20,12 +20,12 @@ colors:
   scrim: "rgba(17,24,39,0.62)"   # lớp phủ bắt buộc dưới chữ trắng đặt trên video
 
 typography:
-  family: "Be Vietnam Pro"  # bộ dấu tiếng Việt đầy đủ, có 100→900 (lệch có chủ đích khỏi Inter của brand web)
+  family: "shoppe2021"  # bộ dấu tiếng Việt đầy đủ, có 100→900
   fonts:                    # file theo weight, đường dẫn tương đối thư mục brand này
-    400: fonts/BeVietnamPro-Regular.ttf
-    700: fonts/BeVietnamPro-Bold.ttf
-    800: fonts/BeVietnamPro-ExtraBold.ttf
-    900: fonts/BeVietnamPro-Black.ttf
+    400: fonts/shopee2021-regular.ttf
+    700: fonts/shopee2021-bold.ttf
+    800: fonts/shopee2021-extrabold.ttf
+    900: fonts/shopee2021-black.ttf
   hook:    { px: 96, weight: 900, lineHeight: 1.25 }
   title:   { px: 74, weight: 900, lineHeight: 1.25 }
   stamp:   { px: 96, weight: 900, lineHeight: 1.25 }
@@ -66,7 +66,6 @@ identity:
   doctor: "BS. Trần Đắc Quang"
   role: "Bác sĩ phẫu thuật thẩm mỹ"
   short: "Dr. Đắc Quang"
-  pages: [BSDQ, PTTM, ATCYK, Sua]     # mã page dùng trong tên file và ak:fb-page-publish
 ---
 
 ## Tổng quan
@@ -100,7 +99,7 @@ trái trong vùng an toàn, rộng ≥ 120px.
 ## Câu chữ bị cấm (Luật Quảng cáo, NĐ 38/2021, NĐ 117/2020)
 
 - "Cam kết 100%", "chắc chắn đẹp", "không đau", "an toàn tuyệt đối", "khỏi hẳn"
-- So sánh hạ thấp cơ sở khác ("tốt nhất Hà Nội", "hơn hẳn chỗ X")
+- So sánh hạ thấp cơ sở khác ("tốt nhất TPHCM", "hơn hẳn chỗ X")
 - Ảnh before–after không có văn bản đồng ý của khách
 - Danh xưng ngoài phạm vi hành nghề đã cấp phép
 - Brand cấm thêm: "Revolutionary", "Best-in-class", "Seamless"

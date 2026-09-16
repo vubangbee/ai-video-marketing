@@ -1,6 +1,6 @@
 ---
 name: ak:hyperframes
-description: Dựng video từ HTML bằng HyperFrames (HeyGen) cho phòng khám — Reels/TikTok 9:16, lower-third, phụ đề, intro/outro — theo brand DR Đắc Quang, chữ tiếng Việt an toàn, rồi ghép tiếng, soi lỗi và bàn giao sang ak:fb-page-publish. Dùng khi user nói "dựng video bằng HyperFrames", "làm reels từ HTML", "video chữ động", "thêm lower-third/phụ đề vào video bác sĩ".
+description: Dựng video từ HTML bằng HyperFrames (HeyGen) cho phòng khám — Reels/TikTok 9:16, lower-third, phụ đề, intro/outro — theo brand DR Đắc Quang, chữ tiếng Việt an toàn, rồi ghép tiếng và soi lỗi bản render. Dùng khi user nói "dựng video bằng HyperFrames", "làm reels từ HTML", "video chữ động", "thêm lower-third/phụ đề vào video bác sĩ".
 argument-hint: "[loại-video] [--page BSDQ|PTTM|ATCYK|Sua]"
 license: MIT
 metadata:
@@ -15,7 +15,7 @@ metadata:
 Skill này **không dạy lại cách viết composition**. HeyGen đã ship 26 skill chính chủ
 (Apache 2.0) làm việc đó, đã cài tại `.agents/skills/`, và chúng cập nhật theo phiên bản
 CLI. Skill này chỉ lo phần upstream không biết: **brand DR Đắc Quang, chữ tiếng Việt,
-khung an toàn 9:16, ghép tiếng, soi lỗi, và đường đi tới fanpage.**
+khung an toàn 9:16, ghép tiếng và soi lỗi bản render.**
 
 <args>$ARGUMENTS</args>
 
@@ -23,7 +23,7 @@ khung an toàn 9:16, ghép tiếng, soi lỗi, và đường đi tới fanpage.*
 
 Xử lý: Reels/TikTok 9:16 cho phòng khám; lower-third, phụ đề, intro/outro chèn vào
 video quay thật của bác sĩ; ghép giọng đọc + nhạc; kiểm tra chất lượng bản render;
-bàn giao file cho `ak:fb-page-publish`.
+đặt file đúng `videos/<ten-video>/renders/{YYMMDD}-{page}-{slug}.mp4`.
 
 Không xử lý: viết kịch bản (dùng `ak:video`), chạy quảng cáo (`ak:ads-management`),
 video React/Remotion (`ak:remotion` — Remotion tính phí Company License từ 4 người,
@@ -118,4 +118,4 @@ Brand chuẩn duy nhất: `brands/dr-dac-quang/frame.md` (frontmatter là chuẩ
 |------|-------------|
 | `references/setup.md` | Node/nvm, doctor báo thiếu, bảng lệnh CLI đầy đủ, sự cố |
 | `references/brand-video.md` | Trước khi viết bất kỳ composition nào |
-| `references/pipeline.md` | Sau khi có MP4: ghép tiếng, soi lỗi, đăng fanpage |
+| `references/pipeline.md` | Sau khi có MP4: ghép tiếng, soi lỗi |

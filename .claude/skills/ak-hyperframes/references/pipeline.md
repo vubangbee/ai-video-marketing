@@ -1,4 +1,4 @@
-# Sau khi render: tiếng, soi lỗi, đăng bài
+# Sau khi render: tiếng và soi lỗi
 
 ## 1. Âm thanh — ưu tiên làm trong composition
 
@@ -43,7 +43,7 @@ tiếng Việt vẫn phải soát lại tay.
 
 ## 2. Soi bản render — bắt buộc, không được bỏ
 
-Dùng script có sẵn của `ak:motion-graphics`, đường dẫn tương đối từ gốc dự án:
+Dùng script trong `scripts/` của repo (đường dẫn tương đối từ gốc dự án):
 
 Soi **trước khi render** cho nhanh (render lại tốn thời gian):
 
@@ -80,32 +80,12 @@ Danh sách soi (fail cái nào thì sửa composition rồi render lại, đừn
 - [ ] Không có câu chữ trong danh sách cấm ở `brand-video.md`
 - [ ] Nhạc nền không nuốt giọng đọc
 
-## 3. Bàn giao sang fanpage
-
-Đặt file đúng chỗ trước:
+## 3. Đặt file đúng chỗ và dọn dẹp
 
 ```
 videos/<ten-video>/renders/{YYMMDD}-{page}-{slug}.mp4
 ```
-
-Đăng bằng `ak:fb-page-publish` (page hợp lệ: `BSDQ`, `PTTM`, `ATCYK`, `Sua`):
-
-```bash
-# Reels đăng ngay
-python .agents/skills/ak-fb-page-publish/scripts/fb_page_publish.py publish-reel \
-  --page BSDQ --video videos/mo-thua-sau-tet-reels/renders/260910-BSDQ-nang-mui-hoi-dap.mp4 --message "@caption.txt"
-
-# Reels hẹn giờ — dùng publish-video --schedule với chính file dọc 9:16 đó,
-# Meta vẫn xếp thành Reel (xem SKILL.md của ak:fb-page-publish)
-python .agents/skills/ak-fb-page-publish/scripts/fb_page_publish.py publish-video \
-  --page BSDQ --video videos/mo-thua-sau-tet-reels/renders/260910-BSDQ-nang-mui-hoi-dap.mp4 \
-  --title "..." --message "@caption.txt" --schedule "10/09 19:30"
-```
-
-Thêm `--dry-run` để thử trước. Caption viết ra file rồi truyền bằng `@caption.txt` —
-truyền chuỗi dài có dấu thẳng trên dòng lệnh PowerShell dễ hỏng mã hoá.
-
-## 4. Dọn dẹp
+(page là mã dùng trong tên file: `BSDQ`, `PTTM`, `ATCYK`, `Sua`)
 
 ```bash
 npx hyperframes preview --stop
