@@ -1,0 +1,63 @@
+# Example edit for templates/talking-head-reels/build.py
+# Copy to videos/<name>/edit.yaml, then adjust timings to the real transcript.
+# Caption indices (s, e) are WORD indices into transcript.json, not seconds.
+# Run: python templates/talking-head-reels/build.py --project videos/<name>
+
+duration: 71.7
+fps: 30
+source: assets/source.mp4
+end_card_cut: 68.03
+
+captions:
+  # [first_word, last_word, text, highlight]
+  - [0, 3, "Mỡ thừa sau Tết", "Mỡ thừa"]
+  - [4, 8, "không chỉ là vấn đề", ""]
+  - [15, 18, "quả bom nổ chậm", "bom nổ chậm"]
+  - [129, 134, "tầm soát mỡ thừa sau Tết", "tầm soát mỡ thừa"]
+  - [135, 138, "hoàn toàn miễn phí", "miễn phí"]
+
+punches:
+  # [time_sec, scale] — snap zooms at sentence boundaries
+  - [3.88, 1.12]
+  - [8.0, 1.0]
+  - [16.72, 1.10]
+
+cards:
+  - id: hook
+    at: 0.0
+    dur: 3.2
+    plate: "MỠ THỪA SAU TẾT"
+  - id: bomb
+    at: 3.88
+    dur: 3.3
+    plate: "QUẢ BOM NỔ CHẬM"
+    sub: "cho sức khỏe"
+  - id: risk
+    at: 18.46
+    dur: 4.06
+    pills_style: warn
+    pills:
+      - ["Tiểu đường", 18.72]
+      - ["Tăng mỡ máu", 19.28]
+      - ["Tim mạch", 21.10]
+  - id: offer
+    at: 31.5
+    dur: 3.68
+    plate: "TẦM SOÁT MỠ THỪA SAU TẾT"
+    stamp: { text: "MIỄN PHÍ", at: 33.64 }
+  - id: cta
+    at: 60.18
+    dur: 2.5
+    plate: "NHẤN ĐĂNG KÝ"
+    arrow: down
+    sfx: chime
+
+lower_third:
+  at: 8.0
+  dur: 6.0
+  name: "BS. Trần Đắc Quang"
+  role: "Bác sĩ phẫu thuật thẩm mỹ"
+
+sfx_extra:
+  # [time_sec, name, volume] — punches/cards already auto-emit whoosh/pop/impact/sparkle
+  - [60.18, chime, 0.35]
